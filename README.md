@@ -2,30 +2,15 @@
 
 ## Round 1
 
-### Exercise 1: PhoneBook
+Simple exercises using a very small data set. Each exercise includes a CSV file, and the problem will be solved using two objects: One that represents a single _thing_, a single row of data, and a second object that manages the collection of those things.
 
-* CSV file with first_name, last_name, phone_number
-* Write full tutorial to work through it
+The exercises should be solved in the following order:
 
-### Exercise 2: ShoppingList
-
-* CSV file with item_name, quantity
-* Create full test suite, stub out the production classes
-
-### Exercise 3: ReportCard
-
-* CSV file with subject_name, grade
-* Write full test suite, do not provide production code
-
-### Exercise 4: DoctorsOffice
-
-* CSV file with partient_name, appointment_time
-* Stub out the test suite with a list of test names, do not provide production code
-
-### Exercise 5: Calendar
-
-* CSV file with name, date_of_birth
-* Do not provide any test suite or production code
+* PhoneBook (see [the tutorial](http://tutorials.jumpstartlab.com/academy/workshops/intro_to_csv.html))
+* ShoppingList
+* ReportCard
+* DoctorsOffice
+* Calendar
 
 ## Round 2
 
