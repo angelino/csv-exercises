@@ -22,7 +22,7 @@
 * CSV file with partient_name, appointment_time
 * Stub out the test suite with a list of test names, do not provide production code
 
-### Exercise 5: Birthdays
+### Exercise 5: Calendar
 
 * CSV file with name, date_of_birth
 * Do not provide any test suite or production code
