@@ -6,7 +6,7 @@ Simple exercises using a very small data set. Each exercise includes a CSV file,
 
 ### PhoneBook
 
-Follow [the step-by-step tutorial](http://tutorials.jumpstartlab.com/academy/workshops/intro_to_csv.html) to get a feel for how we are solving the problem.
+Follow [the step-by-step tutorial](http://tutorials.jumpstartlab.com/academy/workshops/intro-to-csv.html) to get a feel for how we are solving the problem.
 
 If you want to look at the completed code and tests, they're in the directory named `phone_book_solved`.
 
