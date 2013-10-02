@@ -7,7 +7,7 @@ class AppointmentTest < Minitest::Test
   def test_patient_name
   end
 
-  def test_quantity
+  def test_time
   end
 
   def test_all_the_things
