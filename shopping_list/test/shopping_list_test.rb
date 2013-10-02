@@ -10,6 +10,7 @@ class ShoppingListTest < Minitest::Test
   end
 
   def test_load_data
+    skip
     shopping_list = ShoppingList.new("./test/fixtures/items.csv")
 
     item = shopping_list.items[3]
