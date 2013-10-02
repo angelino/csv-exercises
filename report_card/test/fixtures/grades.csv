@@ -1,6 +1,6 @@
-subject,percentage
-Greek Mythology,40
-Calculus,95
-Art Appreciation,35
-Statics,93
-Linear Algebra,81
+student_name,subject,percentage
+Alice Smith,Greek Mythology,40
+Alice Smith,Calculus,95
+Bob Johnsen,Art Appreciation,35
+Alice Smith,Statics,93
+Fred Jones,Linear Algebra,81
