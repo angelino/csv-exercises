@@ -15,14 +15,18 @@ class ItemTest < Minitest::Test
     assert_equal "1 bottle", item.quantity
   end
 
+  def test_unit_price
+    skip
+    item = Item.new(unit_price: "12.34")
+    assert_equal "12.34", item.unit_price
+  end
+
   def test_all_the_things
     skip
-    data = {name: "guacamole", quantity: "enough"}
+    data = {name: "guacamole", quantity: "enough", unit_price: "4.50"}
     item = Item.new(data)
     assert_equal "guacamole", item.name
     assert_equal "enough", item.quantity
   end
 end
-
-
 

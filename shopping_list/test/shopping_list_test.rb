@@ -11,12 +11,13 @@ class ShoppingListTest < Minitest::Test
 
   def test_load_data
     skip
-    path = File.absolute_path("../fixtures/items.csv", __FILE__)
-    shopping_list = ShoppingList.new(path)
+    filename = File.absolute_path("../fixtures/items.csv", __FILE__)
+    shopping_list = ShoppingList.new(filename)
 
     item = shopping_list.items[3]
     assert_equal "cheese", item.name
     assert_equal "200g", item.quantity
+    assert_equal "3.71", item.unit_price
   end
 end
 
