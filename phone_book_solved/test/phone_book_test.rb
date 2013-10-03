@@ -5,12 +5,13 @@ require_relative '../lib/phone_book'
 
 class PhoneBookTest < Minitest::Test
   def test_filename
-    phone_book = PhoneBook.new("./test/fixtures/people.csv")
-    assert_equal "./test/fixtures/people.csv", phone_book.filename
+    phone_book = PhoneBook.new("path/to/data.csv")
+    assert_equal "path/to/data.csv", phone_book.filename
   end
 
   def test_load_data
-    phone_book = PhoneBook.new("./test/fixtures/people.csv")
+    filename = File.absolute_path("../fixtures/people.csv", __FILE__)
+    phone_book = PhoneBook.new(filename)
 
     person = phone_book.entries.last
     assert_equal "Eve", person.first_name

@@ -5,13 +5,14 @@ require_relative '../lib/shopping_list'
 
 class ShoppingListTest < Minitest::Test
   def test_filename
-    shopping_list = ShoppingList.new("./test/fixtures/items.csv")
-    assert_equal "./test/fixtures/items.csv", shopping_list.filename
+    shopping_list = ShoppingList.new("path/to/data.csv")
+    assert_equal "path/to/data.csv", shopping_list.filename
   end
 
   def test_load_data
     skip
-    shopping_list = ShoppingList.new("./test/fixtures/items.csv")
+    path = File.absolute_path("../fixtures/items.csv", __FILE__)
+    shopping_list = ShoppingList.new(path)
 
     item = shopping_list.items[3]
     assert_equal "cheese", item.name
