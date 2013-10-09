@@ -10,7 +10,6 @@ class ReportCardTest < Minitest::Test
   end
 
   def test_load_data
-    skip
     filename = File.absolute_path("../fixtures/grades.csv", __FILE__)
     report_card = ReportCard.new(filename)
 
@@ -18,6 +17,16 @@ class ReportCardTest < Minitest::Test
     assert_equal "Alice Smith", grade.student_name
     assert_equal "Calculus", grade.subject
     assert_equal "95", grade.percentage
+
+    # Fred Jones,Linear Algebra,81
+  end
+
+  def test_slow_loading
+    filename = File.absolute_path("../fixtures/grades.csv", __FILE__)
+    report_card = ReportCard.new(filename)
+
+    report_card.grades
+    report_card.grades
   end
 end
 
