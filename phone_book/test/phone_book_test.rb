@@ -19,4 +19,11 @@ class PhoneBookTest < Minitest::Test
     assert_equal 'Parker', person.last_name
     assert_equal '123-555-5555', person.phone_number
   end
+
+  def test_slow_loading
+    phone_book = PhoneBook.new('./test/fixtures/people.csv')
+
+    phone_book.entries
+    phone_book.entries
+  end
 end

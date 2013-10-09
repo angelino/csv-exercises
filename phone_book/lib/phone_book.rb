@@ -10,11 +10,16 @@ class PhoneBook
   end
 
   def entries
-    people = []
-    contents = CSV.open(filename, headers: true, header_converters: :symbol)
-    contents.each do |row|
-      people << Person.new(row)
-    end
-    people
+    @entries ||= build_people
+  end
+
+  private
+
+  def build_people
+    data.map { |row| Person.new(row) }
+  end
+
+  def data
+    CSV.open(filename, headers: true, header_converters: :symbol)
   end
 end
