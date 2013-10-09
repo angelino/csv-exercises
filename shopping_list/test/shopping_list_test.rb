@@ -10,7 +10,6 @@ class ShoppingListTest < Minitest::Test
   end
 
   def test_load_data
-    skip
     filename = File.absolute_path("../fixtures/items.csv", __FILE__)
     shopping_list = ShoppingList.new(filename)
 
